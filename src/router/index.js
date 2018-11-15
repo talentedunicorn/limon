@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/pages/Home'
 import List from '@/pages/List'
-import Lemon from '@/components/Lemon'
+import Lemon from '@/pages/Lemon'
 
 Vue.use(Router)
 
