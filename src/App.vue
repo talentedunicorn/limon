@@ -24,6 +24,7 @@ export default {
     --font: sans-serif;
     --white: hsl(234, 0%, 98%);
     --black: hsl(234, 0%, 12%);
+    --gray: hsl(234, 0%, 89%);
     --yellow: hsl(65, 97%, 76%);
   }
 
@@ -38,6 +39,11 @@ export default {
     background: var(--white);
     color: var(--black);
     display: flex;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
   }
 
   #app {
