@@ -6,7 +6,7 @@ const localVue = createLocalVue()
 localVue.use(VueRouter)
 
 describe('List.vue', () => {
-  it('should render correct list', () => {
+  it('should render list', () => {
     const lemons = [
       { title: "one", description: "1" },
       { title: "two", description: "2" },
@@ -18,7 +18,7 @@ describe('List.vue', () => {
         lemons: function () { return lemons }
       }
     })
-    expect(wrapper.findAll('li')).toHaveLength(lemons.length)
+    expect(wrapper.vm.lemons).toHaveLength(lemons.length)
   })
 
 })

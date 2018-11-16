@@ -1,22 +1,21 @@
 <template>
   <div class="page-wrapper">
-    <h1>List page</h1>
-    <p>All the lemons life gave you</p>
-    <ul>
-      <li v-for="(lemon, index) in lemons" :key="index">
-        <router-link :to="{ name: 'Lemon', params: { id: lemon.id } }">{{ lemon.title }}</router-link>
-      </li>
-    </ul>
+    <h1>When life gives your lemons</h1>
+    <p>Make a list of their varieties, because why not</p>
+    <LemonList :lemons="lemons"/>
   </div>
 </template>
 
 <script>
+import { mapState } from 'vuex'
+import LemonList from '@/components/LemonList'
 export default {
   name: 'List',
+  components: {
+    LemonList
+  },
   computed: {
-    lemons () {
-      return this.$store.state.lemons
-    }
+    ...mapState(['lemons'])
   }
 }
 </script>
