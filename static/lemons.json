@@ -1,0 +1,32 @@
+[
+  {
+    "id": "kaffir",
+    "title": "Kaffir",
+    "description": "These round, bumpy-skinned limes have very little juice, and what juice they have is bitter. They are used in Southeast Asian cooking for their zest and especially their leaves, which have fragrant oils",
+    "img": "./static/images/kaffir.jpg"
+  },
+  {
+    "id": "key-limes",
+    "title": "Key limes",
+    "description": "These are smaller, rounder, and yellower than most limes, with a higher acid content. They are best known as an ingredient in Key lime pie. Though Key limes were once a commercial crop in Florida, these days the majority of these limes are grown outside the United States, and used mostly in juice or juice concentrate.",
+    "img": "./static/images/key-limes.jpg"
+  },
+  {
+    "id": "lemons",
+    "title": "Eurekas/Lisbons",
+    "description": "A short neck at the stem end distinguishes Eureka lemons, whereas Lisbons have no distinct neck but the blossom end tapers to a pointed nipple. Eurekas may have a few seeds and a somewhat pitted skin, while Lisbons are commonly seedless with smoother skin. ",
+    "img": "./static/images/eurekas_lisbons.jpg"
+  },
+  {
+    "id": "limesquats",
+    "title": "Limequats",
+    "description": "A cross between limes and kumquats, limequats are small, round, and yellowish with an acidic lime flavor",
+    "img": "./static/images/limequats.jpg"
+  },
+  {
+    "id": "rangpur",
+    "title": "Rangpur limes",
+    "description": "Tart, acidic, and very juicy, these fruits resemble oranges or tangerines. They are most likely a cross between a lemon and a mandarin orange, but because they have a lime-like aroma, they have been dubbed limes.",
+    "img": "./static/images/rangpur.jpg"
+  }
+]
