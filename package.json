@@ -9,6 +9,7 @@
     "start": "npm run dev",
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     "test": "npm run unit",
+    "test:coverall": "npm run unit && yarn unit && cat ./test/unit/coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "test:watch": "npm run unit -- --watch",
     "lint": "eslint --ext .js,.vue src test/unit",
     "build": "node build/build.js"
@@ -35,6 +36,7 @@
     "babel-preset-stage-2": "^6.22.0",
     "chalk": "^2.0.1",
     "copy-webpack-plugin": "^4.0.1",
+    "coveralls": "^3.0.2",
     "css-loader": "^0.28.0",
     "eslint": "^4.15.0",
     "eslint-config-standard": "^10.2.1",

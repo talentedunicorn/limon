@@ -1,5 +1,6 @@
 # limon
 [![Build Status](https://travis-ci.org/talentedunicorn/limon.svg?branch=master)](https://travis-ci.org/talentedunicorn/limon)
+[![Coverage Status](https://coveralls.io/repos/github/talentedunicorn/limon/badge.svg)](https://coveralls.io/github/talentedunicorn/limon)
 
 > All things zesty
 
