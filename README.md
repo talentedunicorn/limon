@@ -1,5 +1,5 @@
 # limon
-[![Build Status](https://travis-ci.org/talentedunicorn/limon.svg?branch=staging)](https://travis-ci.org/talentedunicorn/limon)
+[![Build Status](https://travis-ci.org/talentedunicorn/limon.svg?branch=master)](https://travis-ci.org/talentedunicorn/limon)
 
 > All things zesty
 
