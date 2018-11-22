@@ -1,20 +1,17 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import actions from  './actions'
+import { lemons } from '../../test/mockData'
 
 Vue.use(Vuex)
-
-const data = [
-  { title: 'one', id: '1' },
-  { title: 'two', id: '2' },
-  { title: 'three', id: '3' }
-]
 
 describe('Actions', () =>  {
   let store
   let mockSetLemons
+  let mockConsoleError
 
   beforeEach(() => {
+    mockConsoleError = jest.fn()
     mockSetLemons = jest.fn()
 
     store = new Vuex.Store({
@@ -25,6 +22,8 @@ describe('Actions', () =>  {
         fetchLemons: actions.fetchLemons
       }
     })
+
+    global.console.error = mockConsoleError
   })
 
   it('should fetch lemons', () =>  {
@@ -34,14 +33,13 @@ describe('Actions', () =>  {
     global.fetch = jest.fn().mockImplementationOnce(() => Promise.resolve({
       status: 200,
       json: () => Promise.resolve({
-        data: JSON.stringify(data)
+        data: JSON.stringify(lemons)
       })
     }))
 
     return store.dispatch('fetchLemons')
       .then((res) => {
         expect(global.fetch).toHaveBeenCalledWith(url)
-        // expect(mockSetLemons).toHaveBeenCalledWith(data)
       })
   })
 
@@ -50,7 +48,6 @@ describe('Actions', () =>  {
     return store.dispatch('fetchLemons')
       .then((res) => {
         expect(global.fetch).toHaveBeenCalled()
-        expect(mockSetLemons).not.toHaveBeenCalled()
       })
   })
 }) 
